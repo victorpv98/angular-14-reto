@@ -1,0 +1,13 @@
+<h1 class="bg-secondary text-center" [ngStyle]="{'color':'white'}">RETO 14</h1>
+<h2 class="subtitulo" [ngStyle]="{'color':'black','background-color':'#7fffd4'}">COMPONENTE PADRE</h2>
+<form class="text-center">
+    <label for="mensaje">Ingrese su mensaje:</label>
+    <input type="text" name="mensaje" [(ngModel)]="datos_padre">
+</form>
+
+<app-componente-hijo1 [mensaje_padre]="datos_padre"></app-componente-hijo1>
+
+
+<!-- <h1>Componente Padre recepcionando datos del HIJO</h1>
+<app-componente-hijo1 (envio1)="RecibirMensaje1($event)" ></app-componente-hijo1>
+<p>Mensaje desde el hijo: {{ datos_hijo }}</p> -->
